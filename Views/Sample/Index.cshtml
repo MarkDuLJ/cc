@@ -1,0 +1,21 @@
+﻿@using WebApplication2.Models
+@model IEnumerable<WebApplication2.Models.AlbumArtist>
+@{
+    ViewData["Title"] = "About";
+}
+
+<h2>Index</h2>
+
+
+
+<h2>Displaying the Request object</h2>
+<table>
+    <tr><th>Title</th><th>Name</th></tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Album</td>
+            <td>@item.Artist</td>
+        </tr>
+    }
+</table>

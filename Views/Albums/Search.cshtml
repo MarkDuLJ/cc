@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h2>Search</h2>
+<form method="post" asp-action="Search" asp-validation-summary="All">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input type="text" name="request" />
+    <input type="submit" value="Search" />
+</form>
+
